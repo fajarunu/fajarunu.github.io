@@ -1,0 +1,34 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+}
+
+#header {
+  font-family: 'Roboto', sans-serif;
+}
+
+table thead {
+  text-align: center;
+}
+
+table span {
+  display: block;
+}
+
+td span:nth-child(n+2) :not(a) {
+  font-size: 0.9em;
+}
+
+@media (max-width: 576px) {
+  tr th:nth-child(3), tr td:nth-child(3) {
+    display: none;
+  }
+  td span:nth-child(n+2) {
+    display: none;
+  }
+}
+
+a[target="_blank"]:after {
+  content: url(/img/Icon_External_Link.png);
+  margin: 0 0 0 3px;
+}
